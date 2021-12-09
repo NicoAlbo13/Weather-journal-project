@@ -43,4 +43,6 @@ function temperature(req, res){
         date: req.body.date,
         content: req.body.resp
     }
+    Object.assign(projectData, postData);
+    res.send(projectData);
 }

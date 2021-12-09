@@ -13,12 +13,11 @@ function magic(e){
     const feelings = document.getElementById('feelings').value;
     getWeather(api, zipcode, apiKey)
     .then(function(data){
-        //console.log(data)
         postData('/add', {temperature:data.main.temp, date: newDate, resp: feelings});
     })
-    .then(
+    .then(function(data){
         refreshUI()
-    );
+    });
 }
 
 /* Function to GET Web API Data*/
@@ -41,7 +40,7 @@ const postData = async(url, data)=>{
     method: 'POST',
     credentials: 'same-origin',
     headers: {
-        'Content-Type': 'aplication/json',
+        'Content-Type': 'application/json',
     },
     body: JSON.stringify(data),
     });
