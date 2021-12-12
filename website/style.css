@@ -1,111 +1,137 @@
-body{
-    background: #fffff8;
-    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+body {
+  background-image: url('images/clouds.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
-#app{
-    display: grid;
-    grid-auto-rows: minmax(150px, auto);
-    /* grid-template-columns:  */
-    height:100vh;
-    background: #f23557;
-    color: #f0d43a;
-    justify-content: center;
-    grid-gap: 1em;
-    font-size: 20px;
-    font-family: 'Oswald', sans-serif;
+#app {
+  margin-top: 100px;
+  display: grid;
+  grid-template-areas: 'card';
+  color: #f0d43a;
+  justify-content: center;
+  grid-gap: 8px;
+  font-size: 20px;
+  font-family: 'Oswald', sans-serif;
 }
 
-.holder{
-
+#card {
+  grid-area: card;
+  border-radius: 20px;
+  padding-top: 0px;
+  box-shadow: 0 0 15px #444;
 }
 
-.entry{
-    background: rgba(59, 74, 107, .4);
+.entry {
+  background: rgba(59, 74, 107, 0.4);
+  text-align: center;
 }
 
-#entryHolder{
-
+#date {
+  color: #181818;
 }
 
-#date{
-
+#temp {
+  color: #181818;
 }
 
-#temp{
-
+#content {
+  color: #181818;
 }
 
-#content{
-
+#header {
+  width: 400px;
+  background-color: #f0d43a;
+  text-align: center;
+  color: #181818;
+  padding: 3px;
+  margin-top: 0px;
+  border-radius: 20px 20px 0px 0px;
 }
 
-.headline {
-
+#zipper {
+  padding-left: 25px;
 }
-.title{
 
+#fl {
+  padding-left: 25px;
+  padding-bottom: 20px;
+}
+
+#cont {
+  border-radius: 0px 0px 20px 20px;
 }
 
 /*  Basic Styling To Override Default For Basic HTML Elements */
-label{
-    display:block;
-    font-size: 27px;
+label {
+  display: block;
+  font-size: 23px;
+  color: #181818;
 }
 
-input{
-    display:block;
-    height: 60px;
-    width: 320px;
-    background:#22b2da;
-    color: #f0d43a;
-    font-size: 20px;
-    font-family: 'Oswald', sans-serif;
-    border: none;
+input {
+  display: block;
+  height: 50px;
+  width: 320px;
+  background: #2371b1;
+  color: #9b9b9b;
+  font-size: 20px;
+  font-family: 'Oswald', sans-serif;
+  border: 1px solid #181818;
+  border-radius: 8px;
 }
 
-button{
-    width: 400px;
-    height: 100px;
-    background: #3b4a6b;
-    color: #f0d43a;
-    font-size: 26px;
-    font-family: 'Oswald', sans-serif;
-    border: none;
-    box-shadow: 2px 4px 5px #444;
-}
-h1{
-    font-size: 36px;
+button {
+  margin-top: 10px;
+  margin-left: 70px;
+  width: 200px;
+  height: 70px;
+  background: #f0d43a;
+  color: #181818;
+  font-size: 26px;
+  font-family: 'Oswald', sans-serif;
+  border: 2px solid #181818;
+  box-shadow: 2px 4px 5px #444;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 10px;
 }
 
-textarea{
-    background:#22b2da;
-    color: #f0d43a;
-    font-size: 20px;
-    font-family: 'Oswald', sans-serif;
+h1 {
+  font-size: 32px;
+  color: #181818;
+}
+
+textarea {
+  color: #9b9b9b;
+  font-size: 20px;
+  font-family: 'Oswald', sans-serif;
 }
 /* Reset style for HTML element on active to have no border*/
 input:focus,
 select:focus,
 textarea:focus,
 button:focus {
-    outline: none;
+  outline: none;
 }
 /* Style for Placeholder Text*/
-::placeholder { /* Firefox, Chrome, Opera */ 
-    color: #f0d43a; 
-    font-family: 'Oswald', sans-serif;
+::placeholder {
+  /* Firefox, Chrome, Opera */
+  color: #9b9b9b;
+  font-family: 'Oswald', sans-serif;
+}
 
-} 
-  
-:-ms-input-placeholder { /* Internet Explorer 10-11 */ 
-    color: #f0d43a; 
-    font-family: 'Oswald', sans-serif;
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #f0d43a;
+  font-family: 'Oswald', sans-serif;
+}
 
-} 
-  
-::-ms-input-placeholder { /* Microsoft Edge */ 
-    color: #f0d43a; 
-    font-family: 'Oswald', sans-serif;
-
-} 
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #f0d43a;
+  font-family: 'Oswald', sans-serif;
+}
